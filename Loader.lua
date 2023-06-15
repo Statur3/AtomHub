@@ -43,9 +43,9 @@ end
 local Game = GetGameFromPlaceId();
 
 if not Game then
-    return File:Load("AlphaZero/Games/Universal.lua");
+    return File:Load("AtomHub/Games/Universal.lua");
 end
 
-File:Load(string.format("AlphaZero/Games/%s.lua", Game));
+File:Load(string.format("AtomHub/Games/%s.lua", Game));
 
-print(string.format("AlphaZero v2 took %.2f second(s) to load.", tick() - StartTick));
+print(string.format("AtomHub took %.2f second(s) to load.", tick() - StartTick));
